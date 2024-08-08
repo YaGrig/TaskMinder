@@ -1,0 +1,17 @@
+@import '../../../styles/colors';
+
+.listMenu {
+  width: 100%;
+  max-width: 360px;
+  background-color: $text-color-soft;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+
+  .listItemText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../../styles/colors';
+
+.tableContainer {
+  overflow-x: visible !important;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+  }
+}
+
+.divider { 
+  border-right: 1px solid $accent-color;
+  color: $primary-color;
+  font-weight: 500;
+  background-color: $soft-pink-color;
+}
+
+.tableCell {
+  position: relative;
+  cursor: pointer;
+  color: $primary-color;
+  z-index: 0;
+  border-right: 1px solid $accent-color;
+
+  &:hover {
+    background-color: lighten($soft-pink-color, 5%);
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
+  .arrowIcon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.activeTab {
+  background-color: $soft-pink-color;
+}
+
+.tableCell {
+  padding: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.fixedWidth {
+  width: 150px;
+}
+
+.activeTab {
+  background-color: #f0f0f0;
+}
+
+.datePickerContainer {
+  position: relative;
+}
+
+.datePickerPortal {
+  position: absolute;
+  z-index: 9999; 
+  transform: translate(-50%, -50%);
+  background-color: white; 
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.actions {
+  display: flex;
+}

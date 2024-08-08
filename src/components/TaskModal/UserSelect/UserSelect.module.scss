@@ -1,0 +1,63 @@
+@import '../../../../styles/colors';
+
+.input {
+  display: flex;
+  padding: 6px;
+  border-radius: 5px;
+  color: $text-color-soft;
+  border: 1px solid darken($accent-color, 20%);
+
+  &:focus{
+    outline: none !important;
+    border: 1px solid $soft-pink-color;
+    background-color: $accent-color;
+    color: $primary-color;
+  }
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  background-color: $accent-color;
+  padding: 6px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  z-index: 1000; 
+
+  li{
+    cursor: pointer;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    color: $primary-color;
+    &:hover{
+      background: darken($soft-pink-color, 10%);
+      color: $accent-color;
+    }
+  }
+}
+
+.input, .list{
+  width: 100%;
+  max-width: 316px;
+}
+
+.relativeContainer {
+  position: relative; 
+}
+
+
+.absoluteList {
+  position: absolute;
+  width: 100%; 
+  top: 100%;
+  z-index: 1000;
+  background: white; 
+}
+
+.error{
+  color: $error-color;
+  font-size: 12px;
+}

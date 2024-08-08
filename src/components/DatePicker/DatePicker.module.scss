@@ -1,0 +1,34 @@
+@import '../../../styles/_colors';
+
+.picker {
+  border: none;
+  background-color: $accent-color;
+  display: flex;
+  align-items: center;
+  justify-content: center; // Center the content
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(27, 37, 86, 0); // Shadow is currently invisible (alpha is 0)
+  overflow: hidden;
+  z-index: 100;
+  font-size: 16px;
+  width: 100px;
+
+  &:focus {
+    outline: none; // Remove blue border on focus
+    z-index: 100;
+    // border: 1px solid $soft-pink-color !important; // Uncomment if needed
+  }
+}
+
+.wrapper {
+  display: flex;
+  z-index: 100;
+  background-color: $accent-color;
+  border-radius: 10px;
+  
+}
+
+.datePickerContainer {
+  position: absolute;
+  z-index: 9999;
+}

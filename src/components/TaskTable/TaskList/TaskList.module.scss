@@ -1,0 +1,16 @@
+@import '../../../../styles/colors';
+
+.list {
+  .MuiTableContainer-root {
+    max-height: 500px;
+    overflow: auto; // Ensures the table is scrollable if content exceeds max height
+  }
+}
+
+.cell {
+  cursor: pointer;
+}
+
+.activeCell {
+  background-color: $soft-pink-color;
+}

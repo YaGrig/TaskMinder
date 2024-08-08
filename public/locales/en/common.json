@@ -1,0 +1,201 @@
+{
+  "MainMenu": {
+    "tasks": "tasks",
+    "dashboard": "dashboard",
+    "boards": "boards",
+    "landing": "landing"
+  },
+
+  "landing": {
+    "sections": {
+      "hero": "hero",
+      "features": "features",
+      "contact": "contact"
+    }
+  },
+
+  "heroSection": {
+    "headline": "Streamline Your Workflow",
+    "subheadline1": "Discover the next generation of project management.",
+    "getStarted": "Get Started",
+    "haveAccount": "If you have an account",
+    "logIn": " log in"
+  },
+
+  "featuresSlider": {
+    "headline": "Streamline Your Workflow",
+    "subheadline": "Discover the next generation of project management."
+  },
+
+  "modal": {
+    "createTask": "Create Task",
+    "createProject": "Create Project"
+  },
+
+  "features": {
+    "dragAndDrop": {
+      "title": "Drag-and-Drop Functionality",
+      "description": "Easily organize tasks with intuitive drag-and-drop."
+    },
+    "realTimeCollaboration": {
+      "title": "Real-Time Collaboration",
+      "description": "Team members can collaborate and see updates in real time."
+    },
+    "customizableBoards": {
+      "title": "Customizable Boards",
+      "description": "Create boards for different projects with custom columns."
+    },
+    "taskPrioritization": {
+      "title": "Task Prioritization",
+      "description": "Highlight urgent tasks with color-coded labels."
+    },
+    "deadlineTracking": {
+      "title": "Deadline Tracking",
+      "description": "Set and view deadlines to keep projects on track."
+    },
+    "fileSharing": {
+      "title": "File Sharing",
+      "description": "Attach files directly to tasks for easy access."
+    },
+    "activityLogs": {
+      "title": "Activity Logs",
+      "description": "Keep track of all changes and actions within a project."
+    },
+    "mobileApp": {
+      "title": "Mobile App",
+      "description": "Manage your projects on the go with a fully-featured mobile application."
+    },
+    "integration": {
+      "title": "Integration",
+      "description": "Seamlessly integrate with other tools and services."
+    }
+  },
+
+  
+    "authorSection": {
+      "headline": "Author's Headline",
+      "subheadline": "Author's Subheadline",
+      "aboutTheAuthor": "About the Author",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email",
+      "frontEnd": "Front-End Technologies",
+      "backEnd": "Back-End Technologies"
+    }
+  ,
+  
+
+  "noDataWrapper": {
+    "noDataMessage": "No Data"
+  },
+
+  "taskList": {
+    "headers": {
+      "title": "Title",
+      "status": "Status",
+      "priority": "Priority",
+      "assignee": "Assignee",
+      "dueDate": "Due Date",
+      "titleId": "title",
+      "statusId": "status",
+      "priorityId": "priority",
+      "assigneeId": "assignee",
+      "dueDateId": "dueDate"
+    }
+  },
+
+  "taskDetails": {
+    "status": "Status",
+    "priority": "Priority",
+    "dueDate": "Due Date"
+  },
+
+  "taskOptions": {
+    "priority": {
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    },
+    "status": {
+      "DONE": "Done",
+      "IN_PROGRESS": "In Progress",
+      "TODO": "To Do"
+    }
+  },
+
+  "taskDetailsAuthor": {
+    "author": "Author",
+    "assignee": "Assignee"
+  },
+
+  "taskDetailsComment": {
+    "addComment": "Add a comment",
+    "addCommentButton": "Add Comment",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save"
+  },
+
+  "profile": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "requiredName": "Name is required",
+    "requiredLastName": "Last name is required",
+    "requiredEmail": "Email is required",
+    "invalidEmail": "Entered value does not match email format",
+    "changePassword": "Change Password",
+    "newPassword": "New Password",
+    "requiredPassword": "Password is required",
+    "requiredConfirmPassword": "Confirm Password is required",
+    "confirmPassword": "Confirm Password",
+    "passwordsMatch": "Passwords must match",
+    "saveProfile": "Save Profile"
+  },
+
+  "project": {
+    "name": "Project Name",
+    "description": "Project Description",
+    "requiredName": "Project name is required",
+    "requiredDescription": "Project description is required",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+
+  "taskStatus": {
+    "DONE": "Done",
+    "IN_PROGRESS": "In Progress",
+    "TODO": "To Do"
+  },
+
+  "taskPriority": {
+    "HIGH": "High",
+    "MEDIUM": "Medium",
+    "LOW": "Low"
+  },
+
+  "taskModal": {
+    "assignedUser": "Assigned user",
+    "projectName": "Project"
+  },
+
+  "chart": {
+    "priority": "Task Priority Distribution",
+    "projects": "Task Distribution by Project"
+  },
+
+  "button": {
+    "submit": "Submit"
+  },
+
+  "validation": {
+    "invalidEmail": "Entered value does not match email format",
+    "userRequired": "User is required",
+    "projectRequired": "Project is required",
+    "dueDateRequired": "Due date is required",
+    "titleRequired": "Title is required",
+    "descriptionRequired": "Description is required",
+    "statusRequired": "Status is required",
+    "priorityRequired": "Priority is required"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "MainMenu":{
+    "tasks": "Задачи",
+    "dashboard": "Главная страница",
+    "boards": "Доски",
+    "landing": "Лэндинг"
+  },
+    "landing": {
+      "sections": {
+        "hero": "герой",
+        "features": "особенности",
+        "contact": "контакт"
+      }
+    },
+    "heroSection": {
+      "headline": "Оптимизируйте свой рабочий процесс",
+      "subheadline1": "Откройте для себя новое поколение управления проектами.",
+      "getStarted": "Начать",
+      "haveAccount": "Если у вас есть аккаунт",
+      "logIn": " войти"
+    },
+    "featuresSlider": {
+      "headline": "Оптимизируйте свой рабочий процесс",
+      "subheadline": "Откройте для себя новое поколение управления проектами."
+    },
+    "modal": {
+      "createTask": "Создать задачу",
+      "createProject": "Создать проект"
+
+    },
+    
+    "features": {
+      "dragAndDrop": {
+        "title": "Функциональность перетаскивания",
+        "description": "Легко организовывайте задачи с помощью интуитивного перетаскивания."
+      },
+      "realTimeCollaboration": {
+        "title": "Совместная работа в реальном времени",
+        "description": "Члены команды могут сотрудничать и видеть обновления в реальном времени."
+      },
+      "customizableBoards": {
+        "title": "Настраиваемые доски",
+        "description": "Создавайте доски для разных проектов с настраиваемыми колонками."
+      },
+      "taskPrioritization": {
+        "title": "Приоритизация задач",
+        "description": "Выделяйте срочные задачи цветными метками."
+      },
+      "deadlineTracking": {
+        "title": "Отслеживание сроков",
+        "description": "Устанавливайте и просматривайте сроки, чтобы проекты оставались на курсе."
+      },
+      "fileSharing": {
+        "title": "Обмен файлами",
+        "description": "Прикрепляйте файлы прямо к задачам для удобного доступа."
+      },
+      "activityLogs": {
+        "title": "Журналы активности",
+        "description": "Отслеживайте все изменения и действия в проекте."
+      },
+      "mobileApp": {
+        "title": "Мобильное приложение",
+        "description": "Управляйте своими проектами на ходу с помощью полнофункционального мобильного приложения."
+      },
+      "integration": {
+        "title": "Интеграция",
+        "description": "Бесшовная интеграция с другими инструментами и сервисами."
+      }
+    },
+    
+      "authorSection": {
+        "headline": "Заголовок автора",
+        "subheadline": "Подзаголовок автора",
+        "aboutTheAuthor": "О авторе",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "email": "Электронная почта",
+        "frontEnd": "Технологии фронтенда",
+        "backEnd": "Технологии бэкенда"
+      },
+    
+    
+    "noDataWrapper": {
+      "noDataMessage": "Нет данных"
+    },
+    "taskList": {
+      "headers": {
+        "title": "Название",
+        "status": "Статус",
+        "priority": "Приоритет",
+        "assignee": "Ответственный",
+        "dueDate": "Срок",
+        "titleId": "название",
+        "statusId": "статус",
+        "priorityId": "приоритет",
+        "assigneeId": "ответственный",
+        "dueDateId": "срок"
+      }
+    },
+    "taskDetails": {
+      "status": "Статус",
+      "priority": "Приоритет",
+      "dueDate": "Срок"
+    },
+    "taskOptions": {
+      "priority": {
+        "HIGH": "Высокий",
+        "MEDIUM": "Средний",
+        "LOW": "Низкий"
+      },
+      "status": {
+        "DONE": "Выполнено",
+        "IN_PROGRESS": "В процессе",
+        "TODO": "К выполнению"
+      }
+    },
+    "taskDetailsAuthor": {
+      "author": "Автор",
+      "assignee": "Ответственный"
+    },
+    "taskDetailsComment": {
+      "addComment": "Добавить комментарий",
+      "addCommentButton": "Добавить комментарий",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "save": "Сохранить"
+    },
+    "profile": {
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "email": "Эл. почта",
+      "requiredName": "Имя обязательно",
+      "requiredLastName": "Фамилия обязательна",
+      "requiredEmail": "Эл. почта обязательна",
+      "invalidEmail": "Введенное значение не соответствует формату эл. почты",
+      "changePassword": "Изменить пароль",
+      "newPassword": "Новый пароль",
+      "requiredPassword": "Пароль обязателен",
+      "requiredConfirmPassword": "Подтверждение пароля обязательно",
+      "confirmPassword": "Подтверждение пароля",
+      "passwordsMatch": "Пароли должны совпадать",
+      "saveProfile": "Сохранить профиль"
+    },
+    "project": {
+      "name": "Название проекта",
+      "description": "Описание проекта",
+      "requiredName": "Название проекта обязательно",
+      "requiredDescription": "Описание проекта обязательно",
+      "cancel": "Отмена",
+      "create": "Создать"
+    },
+
+    "taskStatus": {
+      "DONE": "Сделано",
+      "IN_PROGRESS": "В процессе",
+      "TODO": "Запланировано"
+    },
+
+    "taskPriority": {
+      "HIGH": "Высокий",
+      "MEDIUM": "Средний",
+      "LOW": "Низкий"
+    },
+
+    "taskModal": {
+      "assigned user" : "Исполнитель",
+      "project name": "Проект",
+      "description": "Описание",
+      "title": "Название"
+    },
+
+
+    "chart": {
+      "priority": "Распределение приоритетов задач",
+      "projects": "Распределение задач по проектам"
+    },
+    "button": {
+      "submit": "создать"
+    },
+   "validation": {
+      "invalidEmail": "Введенное значение не соответствует формату электронной почты",
+  "userRequired": "Пользователь обязателен",
+  "projectRequired": "Проект обязателен",
+  "dueDateRequired": "Срок выполнения обязателен",
+  "titleRequired": "Название обязательно",
+  "descriptionRequired": "Описание обязательно",
+  "statusRequired": "Статус обязателен",
+  "priorityRequired": "Приоритет обязателен"
+}
+
+  }
+  

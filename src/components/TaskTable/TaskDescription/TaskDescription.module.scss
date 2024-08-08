@@ -1,0 +1,102 @@
+@import '../../../../styles/colors';
+@import '../../../../global';
+
+.details,
+.details_card {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adds subtle shadow for depth
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; // Ensures the card does not overflow its container
+  box-sizing: border-box; // Includes padding in the element's total width and height
+  color: $primary-color;
+
+  .status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title,
+  .description,
+  .status,
+  .priority,
+  .assignee,
+  .due-date,
+  .comments {
+    margin-bottom: 20px; // Consistent spacing between sections
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sub_details {
+    display: flex;
+    justify-content: space-between; // Distributes space evenly between child elements
+    flex-wrap: wrap; // Allows items to wrap onto the next line on smaller screens
+
+    @include respond-to(md) {
+      flex-direction: column;
+    }
+
+    > * {
+      flex: 1;
+      min-width: 120px; // Minimum width before wrapping
+      margin-right: 10px; // Spacing between items
+    }
+
+    > *:last-child {
+      margin-right: 0; // Removes margin from the last item
+    }
+  }
+}
+
+.details_card {
+  display: flex;
+  gap: 15px;
+  height: 160px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.assigneeInfo {
+  background-color: lighten($accent-color, 5%);
+  line-height: 32px;
+}
+
+.select {
+  border: none;
+  min-width: 30px;
+
+  &:focus {
+    background-color: black;
+  }
+}
+
+.commentsList {
+  width: 100%;
+  background-color: $accent-color;
+  border-radius: 10px;
+}
+
+.commentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.commentText {
+  flex-grow: 1;
+}
+
+.commentMenuButton {
+  margin-left: 12px;
+}

@@ -1,0 +1,162 @@
+@import './vars';
+
+@function maxWidth($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint) - 0.2px;
+  @return 'max-width: #{$width}';
+}
+
+@function minWidth($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+  @return 'min-width: #{$width}';
+}
+
+@function maxHeight($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint) - 0.2px;
+  @return 'max-height: #{$width}';
+}
+
+@function minHeight($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+  @return 'min-height: #{$width}';
+}
+
+// media от min-width и выше
+@mixin xxs-u {
+  @media (minWidth(xxs)) {
+    @content;
+  }
+}
+@mixin xs-u {
+  @media (minWidth(xs)) {
+    @content;
+  }
+}
+@mixin s-u {
+  @media (minWidth(s)) {
+    @content;
+  }
+}
+@mixin sm-u {
+  @media (minWidth(sm)) {
+    @content;
+  }
+}
+@mixin md-u {
+  @media (minWidth(md)) {
+    @content;
+  }
+}
+@mixin lg-u {
+  @media (minWidth(lg)) {
+    @content;
+  }
+}
+@mixin xl-u {
+  @media (minWidth(xl)) {
+    @content;
+  }
+}
+@mixin xxl-u {
+  @media (minWidth(xxl)) {
+    @content;
+  }
+}
+@mixin xxxl-u {
+  @media (minWidth(xxxl)) {
+    @content;
+  }
+}
+
+// media от min-width до max-width (точные вхождения)
+@mixin xxs-xs {
+  @media (minWidth(xxs)) and (maxWidth(xs)){
+    @content;
+  }
+}
+@mixin xs-s {
+  @media (minWidth(xs)) and (maxWidth(s)){
+    @content;
+  }
+}
+@mixin s-sm {
+  @media (minWidth(s)) and (maxWidth(sm)){
+    @content;
+  }
+}
+@mixin sm-md {
+  @media (minWidth(sm)) and (maxWidth(md)){
+    @content;
+  }
+}
+@mixin md-lg {
+  @media (minWidth(md)) and (maxWidth(lg)){
+    @content;
+  }
+}
+@mixin lg-xl {
+  @media (minWidth(lg)) and (maxWidth(xl)){
+    @content;
+  }
+}
+@mixin xl-xxl {
+  @media (minWidth(xl)) and (maxWidth(xxl)){
+    @content;
+  }
+}
+@mixin xxl-xxxl {
+  @media (minWidth(xxl)) and (maxWidth(xxxl)){
+    @content;
+  }
+}
+@mixin infinity-xxxl {
+  @media (minWidth(xxxl)){
+    @content;
+  }
+}
+
+// media от max-width и ниже
+@mixin xxs {
+  @media (maxWidth(xxs)){
+    @content;
+  }
+}
+@mixin xs {
+  @media (maxWidth(xs)){
+    @content;
+  }
+}
+@mixin s {
+  @media (maxWidth(s)){
+    @content;
+  }
+}
+@mixin sm {
+  @media (maxWidth(sm)){
+    @content;
+  }
+}
+@mixin md {
+  @media (maxWidth(md)){
+    @content;
+  }
+}
+@mixin lg {
+  @media (maxWidth(lg)){
+    @content;
+  }
+}
+@mixin xl {
+  @media (maxWidth(xl)){
+    @content;
+  }
+}
+@mixin xxl {
+  @media (maxWidth(xxl)){
+    @content;
+  }
+}
+@mixin xxxl {
+  @media (maxWidth(xxxl)){
+    @content;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/colors';
+@import '../../../global';
+
+.card {
+  width: 300px;
+  height: 100% !important;
+  min-height: 370px;
+  color: $primary-color;
+  border-radius: 10px;
+  position: relative;
+
+  @include respond-to(md) {
+    min-height: 320px;
+    width: 250px;
+    height: 100% !important;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .title {
+    display: flex;
+  }
+
+  .icon {
+    position: absolute;
+    bottom: 30%;
+    left: 25%;
+
+    @include respond-to(md) {
+      width: 70px;
+      height: 70px;
+      bottom: 20%;
+      left: 35%;
+    }
+  }
+}

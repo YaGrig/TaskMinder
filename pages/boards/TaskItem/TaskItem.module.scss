@@ -1,0 +1,30 @@
+@import '../../../styles/colors';
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  background-color: $soft-pink-color;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $primary-color;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s, background-color 0.4s;
+
+  &:hover,
+  &:focus {
+    background-color: darken($soft-pink-color, 10%);
+    color: $accent-color;
+    transform: scale(1.02);
+  }
+}
+
+.itemContent {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+

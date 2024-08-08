@@ -1,0 +1,171 @@
+# ЭТОТ ФАЙЛ АВТОМАТИЧЕСКИ СГЕНЕРИРОВАН, ЕСЛИ НУЖНО ПЕРЕСОБРАТЬ ФАЙЛ yarn graphql
+type Comment {
+  content: String
+  createdAt: String
+  id: ID!
+  task: Task
+  user: User
+}
+
+input CommentInput {
+  content: String!
+}
+
+type Mutation {
+  """ Мутации для CommentController"""
+  createComment(comment: CommentInput!, taskId: ID!): Comment
+
+  """ Мутации для ProjectController"""
+  createProject(project: ProjectInput!): Project
+
+  """ Мутации для TaskController"""
+  createTask(projectId: ID!, task: TaskInput!): Task
+
+  """ Мутации для UserController"""
+  createUser(user: UserInput!): User
+  deleteComment(id: ID!): Boolean
+  deleteProject(id: ID!): Boolean
+  deleteTask(id: ID!): Boolean
+  deleteUser(id: ID!): Boolean
+  reorderTask(newOrd: Int, newStatus: String, taskId: ID!): Task
+  updateComment(commentInput: CommentInput!, id: ID!): Comment
+  updateProject(id: ID!, project: ProjectInput!): Project
+  updateTask(id: ID!, input: TaskInput!): Task
+  updateUser(input: UserInput!): User
+}
+
+type Project {
+  description: String
+  id: ID!
+  members: [User]
+  tasks: [Task]
+  title: String
+  user: User
+}
+
+input ProjectInput {
+  description: String
+  membersIds: [ID!]
+  tasksIds: [ID!]
+  title: String!
+}
+
+type ProjectTaskStatisticsDto {
+  projectName: String
+  taskCount: Int
+}
+
+type Query {
+  ProjectTaskStatistics: [ProjectTaskStatisticsDto]
+  allComments: [Comment]
+  allProjects(filter: String, limit: Int = 999, offset: Int = 0): [Project]
+  allTasks(filter: String, limit: Int = 999, offset: Int = 0, sortBy: TaskSort): [Task]
+  allUsers(filter: String, limit: Int = 999, offset: Int = 0): [User]
+
+  """ Методы для CommentController"""
+  commentById(id: ID!): Comment
+  commentsByTask(id: ID!): [Comment]
+  getUserByEmail(email: String): User
+
+  """ Методы для ProjectController"""
+  projectById(id: ID!): Project
+
+  """ Методы для TaskController"""
+  taskById(id: ID!): Task
+  tasksStatistics: [TaskStatisticsDto]
+
+  """ Методы для UserController"""
+  userById: User
+}
+
+""" Дополнительные типы, такие как Board, Comment и Task, также должны быть определены в вашем GraphQL schema.
+"""
+type ReorderTaskResponse {
+  message: String
+  success: Boolean!
+  tasks: [Task]
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+type Task {
+  assignedUserId: User
+  description: String
+  dueDate: String
+  id: ID!
+  ord: ID
+  priority: TaskPriority
+  status: TaskStatus
+  title: String
+  user: User
+}
+
+input TaskInput {
+  assignedUserEmail: String
+  description: String
+  dueDate: String
+  priority: TaskPriority
+  project: ID
+  status: TaskStatus
+  title: String
+}
+
+enum TaskPriority {
+  HIGH
+  LOW
+  MEDIUM
+}
+
+enum TaskSort {
+  DATE
+  NAME
+  STATUS
+}
+
+type TaskStatisticsDto {
+  name: TaskStatus
+  value: Int
+}
+
+enum TaskStatus {
+  DONE
+  IN_PROGRESS
+  TODO
+}
+
+enum TaskTypes {
+  ANALITIC
+  BUG
+  IMPROVEMENT
+  TASK
+}
+
+type User {
+  avatar: String
+  comments: [Comment]
+  createdAt: String
+  email: String!
+  firstname: String
+  id: ID!
+  lastname: String
+
+  """ GraphQL не имеет встроенного типа Date, поэтому используется String"""
+  password: String
+  role: Role
+  tasks: [Task]
+  username: String
+}
+
+input UserInput {
+  avatar: String
+  createdAt: String
+  email: String
+  firstname: String
+  lastname: String
+  password: String
+  roleId: ID
+  username: String
+}

@@ -1,0 +1,23 @@
+.stack {
+  display: flex;
+  position: relative;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -10px; 
+  border: 2px solid white; 
+  box-shadow: 0 0 0 2px white; 
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

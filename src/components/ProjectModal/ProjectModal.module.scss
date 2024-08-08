@@ -1,0 +1,22 @@
+.textAreas {
+  border-color: transparent; 
+  color: transparent;
+  
+    .MuiOutlinedInput-root {
+        border-color: transparent; 
+        color: transparent;
+      &.Mui-focused {
+        border-color: transparent;
+        color: transparent;
+      }
+    }
+  }
+  
+  .nameField{
+    margin: 10px 0;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+  }

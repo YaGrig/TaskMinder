@@ -1,0 +1,33 @@
+@import '../../../public/styles/vars';
+@import '../../../styles/colors';
+
+.drawer {
+  display: flex;
+  flex-shrink: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 216px;
+  border: none;
+
+  .paper {
+    width: 100%;
+    padding: 20px 10px;
+    max-width: 216px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    background-color: $text-color-soft;
+  }
+}
+
+.logo {
+  height: 40px;
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  gap: 22px;
+  font-size: 22px;
+  align-items: center;
+  color: $primary-color;
+  cursor: pointer;
+}

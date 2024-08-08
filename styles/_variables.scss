@@ -1,0 +1,17 @@
+$primary-color: #5b8bf7; // Example blue
+$secondary-color: #ff6f61; // Example coral
+$background-color: #f0f0f0; // Example light grey
+$text-color: #333; // Example dark grey
+
+// Define your typography
+$font-stack: 'Open Sans', sans-serif;
+$font-size-root: 16px;
+
+// Export the variables
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  backgroundColor: $background-color;
+  textColor: $text-color;
+  fontSizeRoot: $font-size-root;
+}

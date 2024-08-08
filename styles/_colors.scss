@@ -1,0 +1,23 @@
+$primary-color: #5f6a6e;
+$secondary-color: #495057;
+$accent-color: #F6F8FA;
+$shadow-color: #ccd7e2;
+$background-color: #f8f9fa;
+$hover-color: #343a40;
+$text-color-light: #ffffff;
+$text-color-soft: #C7C8CA;
+$soft-pink-color: #FADADD;
+$success-color: #5f6a6e;
+$text-color-bold: #292a43;
+$error-color: #c92a2a;
+
+:export {
+  primary: $primary-color;
+  secondary: $secondary-color;
+  accent: $accent-color;
+  success: $success-color;
+  background: $background-color;
+  hover: $hover-color;
+  text: $text-color-light;
+  error: $error-color;
+}

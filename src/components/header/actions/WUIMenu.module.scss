@@ -1,0 +1,27 @@
+.menu {
+    position: absolute; // Adjusted as per previous discussion
+    z-index: 1000;
+margin-top: 20px;    background-color: white; // Makes the background white
+    border-radius: 10px; // Gives the container rounded corners
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: Adds a subtle shadow for depth
+    padding: 10px; // Adds space inside the container around the children
+    // Other styles...
+  }
+  
+  
+  .top {
+    transform: translateY(-100%);
+  }
+  
+  .right {
+    transform: translateX(100%);
+  }
+  
+  .bottom {
+    transform: translateY(100%);
+  }
+  
+  .left {
+    transform: translateX(-100%);
+  }
+  

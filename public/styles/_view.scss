@@ -1,0 +1,99 @@
+@import 'media';
+
+.xxl-view {
+  display: none;
+
+  @include xxl {
+    display: block;
+  }
+}
+
+.xl-view {
+  display: none;
+
+  @include xl {
+    display: block;
+  }
+}
+
+.lg-view {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.md-view {
+  display: none;
+
+  @include md {
+    display: block;
+  }
+}
+
+.sm-view {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.s-view {
+  display: none;
+
+  @include s {
+    display: block;
+  }
+}
+
+.xs-view {
+  display: none;
+
+  @include xs {
+    display: block;
+  }
+}
+
+.xxl-hide {
+  @include xxl {
+    display: none;
+  }
+}
+
+.xl-hide {
+  @include xl {
+    display: none;
+  }
+}
+
+.lg-hide {
+  @include lg {
+    display: none;
+  }
+}
+
+.md-hide {
+  @include md {
+    display: none;
+  }
+}
+
+.sm-hide {
+  @include sm {
+    display: none;
+  }
+}
+
+.s-hide {
+  @include s {
+    display: none;
+  }
+}
+
+.xs-hide {
+  @include xs {
+    display: none;
+  }
+}

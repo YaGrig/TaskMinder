@@ -1,0 +1,64 @@
+@import '../../../../public/styles/media';
+@import '../../../../styles/colors';
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: $primary-color;
+  border-radius: 0 25rem 25rem 0;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+
+  svg {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background-color: $soft-pink-color;
+  }
+
+  &.menuItem_active {
+    background-color: darken($soft-pink-color, 10%);
+    color: $background-color;
+
+    &:hover {
+      background-color: lighten($primary-color, 20%);
+    }
+  }
+
+  &.menuItem_simplified {
+    padding: 0.5rem;
+    background-color: lighten($background-color, 5%);
+  }
+
+  &.menuItem_noHover {
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}
+
+.menuItemIcon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: $secondary-color;
+}
+
+.menuItemText {
+  font-weight: 400;
+  color: $text-color-soft;
+}
+
+.menuItemBadge {
+  margin-left: auto;
+  padding: 0.25rem 0.5rem;
+  background-color: $accent-color;
+  color: $background-color;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}

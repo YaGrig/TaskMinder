@@ -1,0 +1,38 @@
+// Define your color scheme
+$color-primary: #5B5F97; // A modern, muted blue
+$color-secondary: #FFC857; // A soft, warm accent color
+$color-tertiary: #119DA4; // A calm, complementary color
+$color-light: #FFFFFF; // White
+$color-dark: #212529; // Almost black
+$color-grey: #ADB5BD; // Grey for neutral look
+
+// Define your font stack
+$font-primary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Define your breakpoints
+$breakpoint-xs: 400px; // Extra small devices
+$breakpoint-sm: 768px; // Small devices
+$breakpoint-md: 1024px; // Medium devices
+$breakpoint-mds: 1240px; // Medium devices
+$breakpoint-lg: 1440px; // Large devices
+
+// Mixins for responsive design
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  }
+}
+
+// // Example usage of mixin
+// .example {
+//   font-size: 16px;
+//   @include respond-to(sm) {
+//     font-size: 14px;
+//   }
+// }

@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0px 4px 16px;
+    border-radius: 8px;
+    max-width: 316px;
+    width: 100%;
+    background: #F5F5F6;
+  
+    > * + * {
+      margin-left: 12px;
+    }
+  }
+  
+  .main {
+    padding: 4px 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 16px
+  }
+  
+  .avatar {
+    display: flex;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    :first-child {
+      font-weight: 500;
+      line-height: 20px;
+    }
+  
+    :nth-child(2) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  
+  .removeButton {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,24 @@
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px; 
+  border-radius: 50%;
+  border: 2px solid;
+  font-size: 16px; 
+}
+
+.complete {
+  border-color: green;
+  color: green;
+}
+
+.inWork {
+  border-color: purple;
+  color: purple;
+}
+
+.available {
+  border-color: grey;
+}

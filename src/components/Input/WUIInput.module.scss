@@ -1,0 +1,289 @@
+@import '../../../styles/colors';
+
+.wuiInput {
+  position: relative;
+  width: 316px;
+  max-width: 100%;
+
+  &__fullWidth {
+    width: 100%;
+    display: grid;
+  }
+
+  &__disabled input {
+    pointer-events: none;
+    color: #8a94ae;
+    background: #e1e4f1;
+  }
+
+  &__startIcon input:focus ~ label,
+  &__startIcon input:not(:placeholder-shown) ~ label {
+    display: none;
+  }
+
+  &__startIcon label {
+    padding-left: 42px;
+  }
+
+  &__startIcon input:focus,
+  &__startIcon input:not(:placeholder-shown) {
+    padding: 14px 16px 14px 42px;
+  }
+}
+
+.inputContainer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  background: white;
+
+  &__small {
+    height: 40px;
+  }
+
+  &__filled {
+    background: #ffffff;
+
+    .fieldset {
+      border-color: #ebebf4;
+    }
+  }
+
+  &__filledGray {
+    background: #f5f5f6;
+
+    .fieldset {
+      border-color: #ffffff;
+    }
+  }
+
+  &__multiline {
+    padding: 22px 16px 8px;
+    height: 100%;
+
+    .fieldset {
+      pointer-events: inherit;
+      cursor: text;
+    }
+  }
+
+  &:hover .fieldset:not(.fieldset__error, .fieldset__disabled),
+  .input:focus ~ .fieldset:not(.fieldset__error) {
+    border-color: #ffafcc;
+  }
+}
+
+.fieldset {
+  box-sizing: border-box;
+  position: absolute;
+  pointer-events: none;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  inset: 0 0 0;
+  border: 1px solid #bdc5db;
+  border-radius: 6px;
+
+  &__disabled {
+    border-color: #bdc5db;
+  }
+
+  &__success {
+    border-color: #00CB8E;
+  }
+
+  &__error {
+    border-color: #ff3c49 !important;
+  }
+}
+
+.input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 22px 16px 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+
+  background-color: transparent;
+  color: #292a43;
+  font-family: 'Onest';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20.4px;
+
+  &:focus::placeholder {
+    color: #ffafcc;
+  }
+
+  &::-moz-placeholder,
+  &::placeholder {
+    color: transparent;
+  }
+
+  &_noLabel {
+    padding: 8px 16px;
+  }
+
+  &_resetIcon,
+  &_endIcon {
+    padding-right: 48px;
+  }
+
+  &_small {
+    height: 40px;
+    line-height: 16px;
+    font-size: 14px;
+    padding: 18px 16px 6px;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding: 17px 16px 7px;
+    }
+
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label {
+      transform: scale(0.7) translateY(-6px) translateX(9px);
+    }
+  }
+
+  &:focus ~ label,
+  :-webkit-autofill ~ label,
+  &:not(:placeholder-shown) ~ label,
+  .label__shrink {
+    transform: scale(0.7) translateY(-6px) translateX(7px);
+  }
+}
+
+.textarea {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  border-radius: 0;
+  resize: none;
+}
+
+.autoGrow {
+  overflow-y: hidden;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 14px 16px;
+  transform-origin: 0 0;
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  pointer-events: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.4px;
+  color: #8a94ae;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+
+  &_small {
+    padding: 10px 16px;
+  }
+}
+
+.helperText {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #8a94ae;
+
+  &__error {
+    color: #f36f87;
+  }
+
+  &__success {
+    color: #00CB8E;
+  }
+}
+
+.lengthText {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  padding: 0;
+  margin-top: 4px;
+  right: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8a94ae;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  color: #292a43;
+
+  &Start {
+    left: 16px;
+  }
+
+  &End {
+    right: 16px;
+  }
+
+  &Small {
+    height: 40px;
+  }
+
+  &Pointer {
+    cursor: pointer;
+  }
+}
+
+.resetIcon,
+.loading,
+.smallIcon {
+  position: absolute;
+  top: 15px;
+
+  &.resetIcon {
+    right: 20px;
+    cursor: pointer;
+  }
+
+  &.loading {
+    right: 25px !important;
+  }
+
+  &.smallIcon {
+    top: 11px !important;
+  }
+}
+
+.loadingIcon {
+  color: $primary-color !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.inputButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 24px 16px;
+}

@@ -1,0 +1,13 @@
+@import '../../../styles/colors';
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.diagram {
+    width: 400px;
+}

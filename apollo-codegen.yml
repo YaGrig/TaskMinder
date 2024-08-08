@@ -1,0 +1,17 @@
+overwrite: true
+debug: true
+verbose: true
+schema: "http://localhost:8080/graphql"
+documents: [
+    "./src/apollo/**/**/*.graphql.ts",
+    "./src/apollo/**/*.graphql.ts"
+]
+generates:
+  src/apollo/generated-hooks.ts:
+    plugins:
+      - add:
+          content:
+            - "/* ЭТОТ ФАЙЛ АВТОМАТИЧЕСКИ СГЕНЕРИРОВАН, ЕСЛИ НУЖНО ПЕРЕСОБРАТЬ ФАЙЛ yarn graphql */"
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo

@@ -1,0 +1,27 @@
+@import '../../../../../styles/colors';
+
+.commentsList {
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 10px;
+  }
+  
+  .commentItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .commentText {
+    flex-grow: 1;
+  }
+  
+  .commentMenuButton {
+    margin-left: 12px;
+  }
+  
+  .commentInput{
+    width: 100%;
+  }

@@ -1,0 +1,22 @@
+@import '../../../../styles/colors';
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valid {
+  border: 2px solid green; // Green color for successful validation
+}
+
+.invalid {
+  border: 2px solid red; // Red color for unsuccessful validation
+}
+
+.empty {
+  border: 2px solid $primary-color; // Primary color for empty state
+}

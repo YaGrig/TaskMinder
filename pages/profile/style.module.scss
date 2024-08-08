@@ -1,0 +1,56 @@
+@import '../../global';
+
+.container {
+  padding: 20px;
+}
+
+.containerUpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.passwordContainer {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+
+  @include respond-to(md) {
+    flex-direction: column;
+  }
+}
+
+.profilePage {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  flex: 0.7;
+  gap: 40px;
+
+  // Add more styles as needed
+}
+
+.fileInput {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.avatar {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.input {
+  width: 300px;
+}
+
+.button {
+  margin-top: 20px;
+}

@@ -1,0 +1,93 @@
+@import 'media';
+
+.f-m {
+  font-size: 14px;
+
+  @include xxl {
+    .f-m-xxl {
+      font-size: 14px;
+    }
+  }
+
+  @include xl {
+    .f-m-xl {
+      font-size: 14px;
+    }
+  }
+
+  @include lg {
+    .f-m-lg {
+      font-size: 14px;
+    }
+  }
+
+  @include md {
+    .f-s-md {
+      font-size: 14px;
+    }
+  }
+
+  @include sm {
+    .f-m-sm {
+      font-size: 14px;
+    }
+  }
+
+  @include s {
+    .f-m-s {
+      font-size: 14px;
+    }
+  }
+
+  @include xs {
+    .f-m-xs {
+      font-size: 14px;
+    }
+  }
+}
+
+.f-s {
+  font-size: 12px;
+
+  @include xxl {
+    .f-s-xxl {
+      font-size: 12px;
+    }
+  }
+
+  @include xl {
+    .f-s-xl {
+      font-size: 12px;
+    }
+  }
+
+  @include lg {
+    .f-s-lg {
+      font-size: 12px;
+    }
+  }
+
+  @include md {
+    .f-s-md {
+      font-size: 12px;
+    }
+  }
+
+  @include sm {
+    .f-s-sm {
+      font-size: 12px;
+    }
+  }
+
+  @include s {
+    .f-s-s {
+      font-size: 12px;
+    }
+  }
+
+  @include xs {
+    .f-s-xs {
+      font-size: 12px;
+    }
+  }
+}

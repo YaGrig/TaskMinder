@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  min-height: 500px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.wrapper > div:first-child {
+  flex: 4;
+}
+
+.wrapper > div:last-child {
+  flex: 6;
+}

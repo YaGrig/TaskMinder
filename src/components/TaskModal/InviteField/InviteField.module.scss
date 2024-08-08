@@ -1,0 +1,143 @@
+@import "public/styles/media";
+
+.inviteFields {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 8px;
+  margin-top: 16px;
+
+
+  &Container {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    // gap: 8px;
+
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// InviteField.module.scss
+.inviteFields {
+  // Стили для общего контейнера
+}
+
+.fieldsTitle {
+  // Стили для заголовка полей
+}
+.itemContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+// .inviteFieldsContainer {
+//   display: flex;
+//   flex-direction: column; // Элементы в колонке
+//   gap: 10px; // Отступы между элементами
+// }
+
+#custom-select{
+  background-color: pink;
+}
+.MuiSelect-select{
+  background-color: pink;
+}
+
+.customSelect {
+  margin: 10px 0; // Отступ сверху и снизу
+  display: flex;
+  border-bottom: 1px solid transparent; // Установите прозрачную границу по умолчанию
+  .customSelect::before {
+    position: absolute;
+    bottom: 0; // Расположение у нижнего края контейнера
+    width: 1px;
+    height: 1px;
+    background-color: pink; // Цвет границы
+    transition: width 0.5s ease-out;
+  }
+  
+& div::before,
+& div::after {
+  content: '';
+  position: absolute;
+  bottom: 0; // Расположение у нижнего края контейнера
+  width: 1px;
+  height: 1px;
+  background-color: pink; // Цвет границы
+  transition: width 0.5s ease-out;
+}
+
+& div:hover::before {
+  width: 50%; // Половина ширины границы
+  left: 0;
+  transition: width 0.5s ease-out, width 0.5s ease-out;
+}
+
+& div:hover::after {
+  width: 50%; // Половина ширины границы
+  right: 0;
+  transition: width 0.5s ease-out, width 0.5s ease-out;
+}
+  // Используйте селектор для изменения стилей при фокусировке на input
+  & .MuiInput-underline:before {
+    border-bottom: '1px solid grey', // Цвет границы до фокусировки
+  }
+  & .MuiInput-underline:after {
+    border-bottom: '2px solid aqua', // Цвет границы при фокусировке
+  }
+
+  & .MuiInput-underline:focus {
+    border-bottom: '2px solid aqua', // Цвет границы при фокусировке
+  }
+
+  &:hover {
+    border-bottom: 1px solid pink; // Изменение цвета границы при наведении
+  }
+
+  &.Mui-error {
+    border-color: pink; // Изменение цвета границы при ошибке
+  }
+}
+.check {
+  display: flex;
+  flex-direction: column;
+  background-color: pink; // Изменение цвета обводки при фокусировке
+  padding: 10px;
+  &:focus {
+    background-color: transparent;
+
+  }
+
+  &:hover {
+    background-color: green;
+    border: 1px solid yellow;
+  }
+
+  &::before {
+    color: none;
+    border: none;
+    border-bottom: none;
+  }
+  &::before :hover{
+    border: 1px solid brown;
+  }
+}
+
+.root{
+  // fill: black;
+  border-bottom: none !important;
+  // background-color: yellow;
+
+  &::before{
+    border-bottom: none !important;
+  }
+
+  &::before:hover{
+    border-bottom: none !important;
+  }
+}
+
+.menuItem {
+  // Стили для элементов меню
+}

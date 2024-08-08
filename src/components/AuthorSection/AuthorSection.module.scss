@@ -1,0 +1,119 @@
+@import '../../../styles/colors';
+@import '../../../global';
+
+.authorSection {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  background-color: darken($accent-color, 0%);
+  color: $primary-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroHeadline {
+  font-size: 5rem; // Adjust as needed
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+
+  @include respond-to(md) {
+    font-size: 2rem;
+  }
+}
+
+.heroSubheadline {
+  font-size: 1.5rem; // Adjust as needed
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include respond-to(md) {
+    font-size: 1rem;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.toolsList {
+  list-style-type: disc;
+  padding-left: 20px;
+
+  li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.authorContainer,
+.toolContainer {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  width: 100%;
+  max-width: 350px;
+  padding:20px;
+  background-color: lighten($accent-color, 5%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px darken($accent-color, 5%);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  @include respond-to(sm) {
+    flex-direction: column;
+  }
+}
+
+.toolContainer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    margin-bottom: 10px;
+    
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      
+      &:hover {
+        color: $soft-pink-color;      }
+    }
+  }
+}
